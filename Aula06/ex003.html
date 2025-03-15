@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Título</title>
+        <link>
+<style>
+    body{
+        background-color: black;
+        color: greenyellow;
+    }
+</style>
+
+    </head>
+    
+    <body>
+        <h1>Site do curso de JS</h1>
+        <p>treinando programação</p>
+    
+        <script>
+    /*comandos em javascript, dar um alerta no navegador para o úsuario, dando uma mensagem*/
+        
+        window.alert("vamos fazer uma conta")
+        var n1 = Number.parseInt(window.prompt('digite um número:')) //muda a var "n1" de string para int
+        var n2 =Number.parseFloat (window.prompt('digite outro número:'))
+        var n3 = Number(window.prompt("Digite o último valor"))
+        var result = n1 + n2 + n3;
+        
+        String(result) //converte número para string
+
+        window.alert("seu resultado é: " + result);
+        //ou
+        window.alert(`a soma entre os números é ${result}`)
+        
+        var texto = 'Javascript'
+
+        'Eu estou aprendendo texto' //não faz interpolação
+        'Eu estou aprentendo' + texto //usa concatenação
+        `eu estou aprendendo ${s}` //usa placeholder
+
+        </script>    
+
+    </body>
+
+</html>
