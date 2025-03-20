@@ -15,12 +15,18 @@
 
         <script>
             var nome = window.prompt("qual é seu nome?")
-            document.writeln(`Olá ${nome} seu nome tem ${nome.length} letras`) //document.write, escreve na tela, lengh, quantidade de caracteres
-            document.write(`eu estou na linha de baixo`)
+            document.writeln(`Olá ${nome} seu nome tem ${nome.length} letras <br/>`) //document.write, escreve na tela, lengh, quantidade de caracteres
+            
+            document.write(`eu estou na linha de baixo <br/>`)
             //write (escreve), writeln(escreve e coloca na linha de baixo)
-            document.writeln(`esse é seu nome em maíusculo: ${nome.toUpperCase}`)
-            document.writeln(`e este é ele em minúsculo ${nome.toLowerCase}`) 
+            document.writeln(`esse é seu nome em maíusculo: ${nome.toUpperCase()} <br/>`)
+            document.writeln(`e este é ele em minúsculo ${nome.toLowerCase()} <br/>`) 
 
+
+            var n1 = 1555.5
+            document.write(`esse é o n1, sem to fixed ${n1} <br/>`)
+            n1.toFixed(2).replace("." , ",")
+            document.write(`esse é o n1, com to fixed ${n1}`)
         </script>
     </body>
 </html>
