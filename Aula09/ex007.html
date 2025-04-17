@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>primeiros passos com DOM</title>
+    <style>
+        body{
+            background: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+   <h1>Iniciando estudos de DOM</h1> 
+    <p>conteúdo 2</p>
+    <p>conteúdo 3</p>
+    <div>clique em mim</div>
+    <div id="mensagem">
+        Mensagem
+    </div>
+    <div name="nome">
+        Opa nome
+    </div>
+
+    <div class="classe">
+        classe
+    </div>
+
+    <div class="seletorclasse">
+        seletorclasse
+    </div>
+    <div id="seletorId">
+        seletorId
+    </div>
+
+    <script>
+        window.document.write("Olá mundo DOM") //usa o DOM, passando pela árvore para chegar no conteúdo
+        window.document.write(window.document.URL)
+
+        //Por tag
+
+        var pt = window.document.getElementsByTagName("p")  //pega os elementos pela tag no caso p
+        var p1 = window.document.getElementsByTagName("p")[0] //pega o primeiro paragráfo
+         
+        window.document.write(p1.innerText) //escreve
+        p1.style.background = "pink" //muda a cor do elemento
+
+        //innerHTML pega tudo incluindo as tags filhas
+        //innertext pega só o texto
+
+        //Por id
+        var idiv = window.document.getElementById("mensagem")
+        //pega itens únicos com id
+        idiv.style.color = "yellow"
+
+        //Por Nome
+        var nameDiv = window.document.getElementsByName("nome")[0]
+        nameDiv.style.color = "green"
+
+        //Por classe
+
+        var classeDiv = window.document.getElementsByClassName("classe")[0]
+        classeDiv.style.background = "blue"
+
+        //Por seletor
+
+        var select = window.document.querySelector("div.seletorclasse")
+        select.style.color = "red"
+
+        var selectid = window.document.querySelector("div#seletorId")
+        selectid.style.color = "brown"
+    </script>
+</body>
+
+</html>
