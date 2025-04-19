@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+<h1>Sistema de Países</h1>
+<input type="text" name="texpais" id="textpais"> 
+<input type="button" value="verificar" onclick="pais()">
+<div id="res">
+
+</div>
+<script>
+    function pais() {
+        var textoP = window.document.querySelector('input#textpais')
+        var res = window.document.querySelector('div#res')
+        res.innerHTML = `<p>Seu país é: ${textoP}</p>`
+
+        if (textoP == "Brasil")  {
+            res.innerHTML += `Brasilll`   
+        }
+        else {
+            res.innerHTML += `é nada` 
+        }
+    }
+</script>
+</body>
+</html>
